@@ -1,13 +1,13 @@
-# clustalW detailed script from terminal
+# clustalW  script from the terminal
 
 ```
+pwd
 cd desktop
 cd software
-ls
-clustalw-2.1-macosx/clustalw2 -ALIGN -INFILE=ADH_grplant_OG0002122.fasta -OUTFILE=ADH_grplant_OG0002122-aligned.fasta -OUTPUT=PHYLIP
+clustalw-2.1-macosx/clustalw2 -ALIGN -INFILE=ADH_grplant_OG0002122.fasta -OUTFILE=ADH_grplant_OG0002122-aligned.fasta -OUTPUT=FASTA
 
 #return
-zsh: bad CPU type in executable: clustalw-2.1-macosx/clustalw2
+bad CPU type in executable: clustalw-2.1-macosx/clustalw2
 
 conda activate
 conda create -n clustalw2 -c biobuilds -y clustalw
@@ -42,10 +42,10 @@ Executing transaction: done
 #     $ conda deactivate
 
 conda activate clustalw2
-clustalw2 -ALIGN -INFILE=ADH_grplant_OG0002122.fasta -OUTFILE=ADH_grplant_OG0002122-aligned.fasta -OUTPUT=PHYLIP
+clustalw2 -ALIGN -INFILE=ADH_grplant_OG0002122.fasta -OUTFILE=ADH_grplant_OG0002122-aligned.fasta -OUTPUT=FASTA
 
 #return
-CLUSTAL 2.1 Multiple Sequence Alignments
+ CLUSTAL 2.1 Multiple Sequence Alignments
 
 
 Sequence format is Pearson
@@ -7560,10 +7560,9 @@ Group 118: Sequences: 119      Score:4613
 Group 119: Sequences:   2      Score:1215
 Group 120: Sequences: 121      Score:2720
 Alignment Score 6470036
+firstres = 1 lastres = 1024
+FASTA file created!
 
-
-WARNING: Truncating sequence names to 10 characters for PHYLIP output.
-
-
-PHYLIP-Alignment file created   [ADH_grplant_OG0002122-aligned.fasta]
+Fasta-Alignment file created    [ADH_grplant_OG0002122-aligned.fasta]
 ```
+
