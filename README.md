@@ -7,7 +7,6 @@ Raw data on ADH enzymes in green plants was obtained from Beth Moore
 used clustalW for progressive alignment of ADH enzyme data
   CLUSTAL 2.1 Multiple Sequence Alignments
     Guide tree file created:   [ADH_grplant_OG0002122.dnd]
-      120 groups
       Alignment Score 6470036
     PHYLIP-Alignment file created   [ADH_grplant_OG0002122-aligned.fasta]
-    
+
