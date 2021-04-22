@@ -1,4 +1,4 @@
-#clustalW detailed script from terminal
+# clustalW detailed script from terminal
 
 ```
 cd desktop
@@ -12,7 +12,7 @@ zsh: bad CPU type in executable: clustalw-2.1-macosx/clustalw2
 conda activate
 conda create -n clustalw2 -c biobuilds -y clustalw
 
-#retrn
+#return
 Collecting package metadata (current_repodata.json): done
 Solving environment: done
 
