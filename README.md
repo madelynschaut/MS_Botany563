@@ -13,7 +13,7 @@ Guide tree file created:   [ADH_grplant_OG0002122.dnd]
     Alignment Score 6470036
 PHYLIP-Alignment file created   [ADH_grplant_OG0002122-aligned.fasta]
 ```
-see "clustalW_script" for detailed output
+see "clustalW_script.md" for detailed output
 
 ---
 used OrthoFinder for othology inference of ADH enzyme data

@@ -24,7 +24,7 @@ downloaded ClustalW file clustalw-2.1-macosx from http://www.clustal.org/clustal
 
 copied ADH_grplantFeb19_OG0002122.fasta to software folder and renamed to ADH_grplant_OG0002122.fasta
 
-opened the terminal-- see "clustalWscript.md"
+ran clustalW2 through the terminal-- see "clustalW_script.md" for reproducible script
 
 
 ## OrthoFinder
