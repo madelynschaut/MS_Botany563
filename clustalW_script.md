@@ -1,4 +1,4 @@
-# clustalW  script from the terminal
+# clustalW script from the terminal
 
 ```
 pwd
