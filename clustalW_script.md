@@ -1,5 +1,4 @@
 # clustalW script from the terminal
-
 ```
 pwd
 cd desktop
