@@ -21,61 +21,11 @@ downloaded bioconda and followed installation instructions from https://bioconda
 
 ## ClustalW
 downloaded ClustalW file clustalw-2.1-macosx from http://www.clustal.org/clustal2/ and copied to Desktop/software
-copied ADH_grplantFeb19_OG0002122.fa to software folder and renamed to ADH_grplant_OG0002122.fasta
-opened the terminal 
-```
-cd desktop
-cd software
-ls
-clustalw-2.1-macosx/clustalw2 -ALIGN -INFILE=ADH_grplant_OG0002122.fasta -OUTFILE=ADH_grplant_OG0002122-aligned.fasta -OUTPUT=PHYLIP
 
-#return
-zsh: bad CPU type in executable: clustalw-2.1-macosx/clustalw2
+copied ADH_grplantFeb19_OG0002122.fasta to software folder and renamed to ADH_grplant_OG0002122.fasta
 
-conda activate
-conda create -n clustalw2 -c biobuilds -y clustalw
+opened the terminal-- see "clustalWscript.md"
 
-#return
-Collecting package metadata (current_repodata.json): done
-Solving environment: done
-
-## Package Plan ##
-
-  environment location: /Users/madelynschaut/miniconda3/envs/clustalw2
-
-  added / updated specs:
-    - clustalw
-
-
-The following NEW packages will be INSTALLED:
-
-  clustalw           biobuilds/osx-64::clustalw-2.1-1
-
-
-Preparing transaction: done
-Verifying transaction: done
-Executing transaction: done
-#
-# To activate this environment, use
-#
-#     $ conda activate clustalw2
-#
-# To deactivate an active environment, use
-#
-#     $ conda deactivate
-
-
-conda activate clustalw2
-clustalw2 -ALIGN -INFILE=ADH_grplant_OG0002122.fasta -OUTFILE=ADH_grplant_OG0002122-aligned.fasta -OUTPUT=PHYLIP
-
-#return
-CLUSTAL 2.1 Multiple Sequence Alignments
-...
-Guide tree file created:   [ADH_grplant_OG0002122.dnd]
-Alignment Score 6470036
-...
-PHYLIP-Alignment file created   [ADH_grplant_OG0002122-aligned.fasta]
-```
 
 ## OrthoFinder
 downloaded orthofinder from https://davidemms.github.io/orthofinder_tutorials/downloading-and-running-orthofinder.html
@@ -88,7 +38,7 @@ Solving environment: done
 
 ## Package Plan ##
 
-  environment location: /Users/madelynschaut/miniconda3/envs/clustalw2
+  environment location: /Users/madelynschaut/miniconda3
 
   added / updated specs:
     - orthofinder
@@ -97,11 +47,38 @@ Preparing transaction: done
 Verifying transaction: done
 Executing transaction: done
 
-orthofinder -
+ orthofinder -h
 
 #return
 OrthoFinder version 2.5.2 Copyright (C) 2014 David Emms
 ...
+```
+
+using a script provided with OrthoFinder to extract just the longest transcript variant per gene and run OrthoFinder on these files
+python script is not installed during conda installation-- need to get the python scripts from the github repo:
+```
+cd ..
+cd software
+git clone https://github.com/davidemms/OrthoFinder.git
+
+#return
+Cloning into 'OrthoFinder'...
+remote: Enumerating objects: 8702, done.
+remote: Counting objects: 100% (52/52), done.
+remote: Compressing objects: 100% (38/38), done.
+remote: Total 8702 (delta 26), reused 33 (delta 14), pack-reused 8650
+Receiving objects: 100% (8702/8702), 31.55 MiB | 17.60 MiB/s, done.
+Resolving deltas: 100% (4351/4351), done.
+Updating files: 100% (4140/4140), done.
+```
+
+running orthofinder
+```
+
+
+
+
+
 
 
 
