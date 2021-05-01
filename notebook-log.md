@@ -1,4 +1,4 @@
-# Notebook Log
+# reproducible script for phylogenetic final project analysis
 
 cloned my madelynschaut/MS_Botany563 github repository to my local computer
 ```
