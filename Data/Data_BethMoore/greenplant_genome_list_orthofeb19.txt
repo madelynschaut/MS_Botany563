@@ -1,0 +1,45 @@
+fasta_file	gene_startswith	species	label	order	family	common name	division/clade
+29: Rcommunis_119_v0.1.protein_primaryTranscriptOnly.fa.mod.fa	"2,3,4,5, or 6+ XXXX.mXXXXX"	Ricinus communis	dicot	Malpighiales	Euphorbiaceae	castor bean	Rosid
+0: Aamericanusv1.1.primaryTrs.pep.fa.mod.fa	Aca	Acorus americanus	monocot	Acorales	Acoraceae	American sweet flag/wetland plant	Monocot
+2: Acomosus_321_v3.protein_primaryTranscriptOnly.fa.mod.fa	Aco	Ananas comosus	monocot	Poales	Bromeliaceae	pineapple	Commelinids
+3: Ahypochondriacus_459_v2.1.protein_primaryTranscriptOnly.fa.mod.fa	AH	Amaranthus hypochondriacus	dicot	Caryophyllales	Amaranthaceae	Prince-of-Wales feather	Eudicot
+1: Acoerulea_322_v3.1.protein_primaryTranscriptOnly.fa.mod.fa	Aqcoe	Aquilegia coerulea	dicot	Ranunculales	Ranunculaceae	blue colombine	Eudicot
+4: Athaliana_167_TAIR10.protein_primaryTranscriptOnly.fa.mod.fa	AT	Arabidopsis thaliana	dicot	Brassicales	Brassicaceae	Arabidopsis	Rosid
+6: Azolla_filiculoides.protein.highconfidence_v1.1.fasta	Azfi_	Azolla filiculoides	basal-nonflower	Salviniales	Salviniaceae	fern	Polypodiophyta
+8: Boleraceacapitata_446_v1.0.protein_primaryTranscriptOnly.fa.mod.fa	Bol	Brassica oleracea capitata	dicot	Brassicales	Brassicaceae	cabbage	Rosid
+7: Bdistachyon_556_v3.2.protein_primaryTranscriptOnly.fa.mod.fa	Bradi	Brachypodium distachyon	monocot	Poales	Poaceae	purple false brome	Commelinids
+9: BrapaFPsc_277_v1.3.protein_primaryTranscriptOnly.fa.mod.fa	Brara	Brassica rapa	dicot	Brassicales	Brassicaceae	turnip	Rosid
+39: proteome.all_transcripts.calsi.fasta.mod.fa	CALSI	Calamus simplicifolius	monocot	Arecales	Arecaceae	rattan palm	Commelinids
+10: Creinhardtii_281_v5.6.protein_primaryTranscriptOnly.fa.mod.fa	Cre	Chlamydomonas reinhardtii	greenalgae	Chlamydomonadales	Chlamydomonadaceae	green algae	Chlorophyta
+11: Csativus_122_v1.0.protein_primaryTranscriptOnly.fa.mod.fa	Cucsa	Cucumis sativus	dicot	Cucurbitales	Cucurbitaceae	cucumber	Rosid
+12: Dcarota_388_v2.0.protein_primaryTranscriptOnly.fa.mod.fa	DCAR	Daucus carota	dicot	Apiales	Apiaceae	wild carrot	Asterids
+13: Egrandis_297_v2.0.protein_primaryTranscriptOnly.fa.mod.fa	Eucgr	Eucalyptus grandis	dicot	Myrtales	Myrtaceae	rose gum	Rosid
+5: Atrichopoda_291_v1.0.protein_primaryTranscriptOnly.fa.mod.fa	evm_27.model.AmTr_v1.0	Amborella trichopoda	basal-angiosperm	Amborellales	Amborellaceae	Amborella	Angiosperms
+14: Fvesca_501_v2.0.a2.protein_primaryTranscriptOnly.fa.mod.fa	gene	Fragaria vesca	dicot	Rosales	Rosaceae	wild strawberry	Rosid
+16: Graimondii_221_v2.1.protein_primaryTranscriptOnly.fa.mod.fa	Gorai	Gossypium raimondii	dicot	Malvales	Malvaceae	cotton	Rosid
+19: Macuminata_304_v1.protein_primaryTranscriptOnly.fa.mod.fa	GSMUA	Musa acuminata	monocot	Zingiberales	Musaceae	banana	Commelinids
+Vvinifera_145	GSVIV	Vitis vinifera	dicot	Vitales	Vitaceae	grape	Rosid
+17: Jascendensv1.1.primaryTrs.pep.fa.mod.fa	Joasc	Joinvillea ascendens	monocot	Poales	Joinvilleaceae	Joinvillea	Commelinids
+18: Kfedtschenkoi_382_v1.1.protein_primaryTranscriptOnly.fa.mod.fa	Kaladp	Kalanchoe fedtschenkoi 	dicot	Saxifragales	Crassulaceae	formerly Bryophyllum fedtschenkoi	Eudicot
+23: Osativa_323_v7.0.protein_primaryTranscriptOnly.fa.mod.fa	LOC_Os	Oryza sativa	monocot	Poales	Poaceae	rice	Commelinids
+24: Pabies1.01.0-HC-pep.faa.mod.fa	MA_	Picea abies	gymnosperm	Pinales	Pinaceae	norway spruce	Pinophyta
+21: Mpolymorpha_320_v3.1.protein_primaryTranscriptOnly.fa.mod.fa	Mapoly	Marchantia polymorpha 	basal-nonflower	Marchantiales	Marchantiaceae	liverwort	Marchantiophyta
+22: Mtruncatula_285_Mt4.0v1.protein_primaryTranscriptOnly.fa.mod.fa	Medtr	Medicago truncatula	dicot	Fabales	Fabaceae	legume	Rosid
+20: Mguttatus_256_v2.0.protein_primaryTranscriptOnly.fa.mod.fa	Migut	Mimulus guttatus	dicot	Lamiales	Phrymaceae	monkey flower	Asterids
+15: GCF_000188115.4_SL3.0_protein.faa.mod.fa	NP_ or XP_	Solanum lycopersicum	dicot	Solanales	Solanaceae	tomato	Asterids
+40: proteome.all_transcripts.egu.fasta.mod.fa	p5.00_sc	Elaeis guineensis	monocot	Arecales	Arecaceae	oil palm	Commelinids
+27: Pvirgatum_516_v5.1.protein_primaryTranscriptOnly.fa.mod.fa	Pavir	Panicum virgatum	monocot	Poales	Poaceae	switchgrass	Commelinids
+36: Stuberosum_448_v4.03.protein_primaryTranscriptOnly.fa.mod.fa	PGSC	Solanum_tuberosum	dicot	Solanales	Solanaceae	potato	Asterids
+28: Pvulgaris_442_v2.1.protein_primaryTranscriptOnly.fa.mod.fa	Phvul	Phaseolus vulgaris	dicot	Fabales	Fabaceae	common bean	Rosid
+26: Ptrichocarpa_210_v3.0.protein_primaryTranscriptOnly.fa.mod.fa	Potri	Populus trichocarpa	dicot	Malpighiales	Salicaceae	poplar/ black cottonwood	Rosid
+25: Ppatens_318_v3.3.protein_primaryTranscriptOnly.fa.mod.fa	Pp	Physcomitrella patens	basal-nonflower	Funariales	Funariaceae	moss	Bryophyta
+30: Salvinia_cucullata.protein.highconfidence_v1.2.fasta	Sacu_v1.1_	Salvinia cucullata	basal-nonflower	Salviniales	Salviniaceae	watermoss	Polypodiophyta
+32: Sitalica_312_v2.2.protein_primaryTranscriptOnly.fa.mod.fa	Seita	Setaria italica	monocot	Poales	Poaceae	fostail millet	Commelinids
+37: Sviridis_500_v2.1.protein_primaryTranscriptOnly.fa.mod.fa	Sevir	Setaria viridis	monocot	Poales	Poaceae	green foxtail	Commelinids
+31: Sfallax_522_v1.1.protein_primaryTranscriptOnly.fa.mod.fa	Sphfalx	Sphagnum fallax	basal-nonflower	Sphagnales	Sphagnaceae	flat-topped bogmoss	Bryophyta
+34: Spolyrhiza_290_v2.protein_primaryTranscriptOnly.fa.mod.fa	Spipo	Spirodela polyrhiza	monocot	Alismatales	Araceae	duckweed	Monocot
+35: Streptochaeta_maker_max_proteins_V1.fasta.mod.fa	STRANG_	Streptochaeta angustifolia	monocot	Poales	Poaceae	Streptochaeta	Commelinids
+38: Tcacao_233_v1.1.protein_primaryTranscriptOnly.fa.mod.fa	Thecc	Theobroma cacao	dicot	Malvales	Malvaceae	cocoa	Rosid
+33: Smoellendorffii_91_v1.0.protein_primaryTranscriptOnly.fa.mod.fa	XXXXXX or XXXXX	Selaginella moellendorffii 	basal-nonflower	Selaginellales	Selaginellaceae	spike moss	Lycophytes
+ZmaysPH207_443_v1.1	Zm	Zea mays	monocot	Poales	Poaceae	maize	Commelinids
+Zmarina_324_v2.2	Zosma	Zostera marina	monocot	Alismatales	Zosteraceae	sea grass	Monocot
