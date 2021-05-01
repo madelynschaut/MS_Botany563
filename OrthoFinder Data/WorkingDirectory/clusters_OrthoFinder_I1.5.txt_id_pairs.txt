@@ -1,0 +1,11 @@
+# cline: mcl /Users/madelynschaut/Desktop/Botany563_FinalProject/software/species_files/OrthoFinder/Results_Apr30/WorkingDirectory/OrthoFinder_graph.txt "-I" "1.5" "-o" "/Users/madelynschaut/Desktop/Botany563_FinalProject/software/species_files/OrthoFinder/Results_Apr30/WorkingDirectory/clusters_OrthoFinder_I1.5.txt" "-te" "1" "-V" "all"
+(mclheader
+mcltype matrix
+dimensions 36x2
+)
+(mclmatrix
+begin
+0      0_0 0_1 0_2 0_3 1_0 2_0 2_1 3_0 4_0 4_1 4_2 4_3 4_4 4_5 6_0 7_0 9_0 9_1 10_0 11_0 12_0 13_0 14_0 15_0 16_0 16_1 
+      17_0 18_0 18_1 18_2 18_3 19_0 $
+1      5_0 5_1 8_0 8_1 $
+)

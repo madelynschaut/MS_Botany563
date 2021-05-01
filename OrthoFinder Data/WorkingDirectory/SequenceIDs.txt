@@ -1,0 +1,36 @@
+0_0: AH020680-RA
+0_1: AH013976-RA
+0_2: AH013978-RA
+0_3: AH013977-RA
+1_0: QOY59747.1 arogenate dehydrogenase 2 [Amaranthus tricolor]
+2_0: AT1G15710.1
+2_1: AT5G34930.1
+3_0: AYE54618.1 arogenate dehydrogenase alpha, partial [Basella alba]
+4_0: AST12926.1 arogenate dehydrogenase beta [Beta vulgaris]
+4_1: AST16042.1 arogenate dehydrogenase beta [Beta vulgaris]
+4_2: AST12931.1 arogenate dehydrogenase alpha [Beta vulgaris]
+4_3: AST12935.1 arogenate dehydrogenase alpha [Beta vulgaris subsp. maritima]
+4_4: XP_010687854.1 PREDICTED: arogenate dehydrogenase 2, chloroplastic [Beta vulgaris subsp. vulgaris]
+4_5: XP_010687851.1 PREDICTED: arogenate dehydrogenase 2, chloroplastic [Beta vulgaris subsp. vulgaris]
+5_0: XP_021760702.1 arogenate dehydrogenase 1, chloroplastic-like [Chenopodium quinoa]
+5_1: XP_021741823.1 arogenate dehydrogenase 1, chloroplastic-like [Chenopodium quinoa]
+6_0: ASA40298.1 arogenate dehydrogenase alpha, partial [Corrigiola litoralis]
+7_0: AST14836.1 arogenate dehydrogenase alpha, partial [Herniaria latifolia]
+8_0: AYE54619.1 arogenate dehydrogenase beta [Macarthuria australis]
+8_1: AYE54615.1 arogenate dehydrogenase alpha [Macarthuria australis]
+9_0: AYE54620.1 arogenate dehydrogenase beta [Microtea debilis]
+9_1: AYE54617.1 arogenate dehydrogenase alpha, partial [Microtea debilis]
+10_0: AMR60658.1 arogenate dehydrogenase, partial [Mirabilis jalapa]
+11_0: AST12937.1 arogenate dehydrogenase beta, partial [Nepenthes ventricosa x Nepenthes alata]
+12_0: AST14835.1 arogenate dehydrogenase alpha [Paronychia polygonifolia]
+13_0: AYE54616.1 arogenate dehydrogenase alpha, partial [Polycarpon tetraphyllum]
+14_0: AST12940.1 arogenate dehydrogenase alpha, partial [Portulaca oleracea]
+15_0: AST12939.1 arogenate dehydrogenase alpha, partial [Rivina humilis]
+16_0: AYE54621.1 arogenate dehydrogenase beta, partial [Simmondsia chinensis]
+16_1: AYE54614.1 arogenate dehydrogenase alpha [Simmondsia chinensis]
+17_0: AST14834.1 arogenate dehydrogenase alpha [Spergularia marina]
+18_0: XP_021849766.1 arogenate dehydrogenase 2, chloroplastic-like [Spinacia oleracea]
+18_1: AST12936.1 arogenate dehydrogenase beta, partial [Spinacia oleracea]
+18_2: AST12938.1 arogenate dehydrogenase alpha, partial [Spinacia oleracea]
+18_3: XP_021849779.1 arogenate dehydrogenase 2, chloroplastic-like [Spinacia oleracea]
+19_0: ASA40299.1 arogenate dehydrogenase alpha, partial [Telephium imperati]

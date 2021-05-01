@@ -1,0 +1,29 @@
+2021-04-30 18:19:56 : Started OrthoFinder version 2.5.2
+Command Line: /Users/madelynschaut/miniconda3/bin/orthofinder -f species_files
+
+WorkingDirectory_Base: /Users/madelynschaut/Desktop/Botany563_FinalProject/software/species_files/OrthoFinder/Results_Apr30/WorkingDirectory/
+
+Species used: 
+0: Amaranthus_hypochondriacus.fasta
+1: Amaranthus_tricolor.fasta
+2: Arabidopsis_thaliana.fasta
+3: Basella_alba.fasta
+4: Beta_vulgaris.fasta
+5: Chenopodium_quinoa.fasta
+6: Corrigiola_litoralis.fasta
+7: Herniaria_latifolia.fasta
+8: Macarthuria_australis.fasta
+9: Microtea_debilis.fasta
+10: Mirabilis_jalapa.fasta
+11: Nepenthes_ventricosaXalata.fasta
+12: Paronychia_polygonifolia.fasta
+13: Polycarpon_tetraphyllum.fasta
+14: Portulaca_oleracea.fasta
+15: Rivina_humilis.fasta
+16: Simmondsia_chinensis.fasta
+17: Spergularia_marina.fasta
+18: Spinacia_oleracea.fasta
+19: Telephium_imperati.fasta
+
+FN_Orthogroups: /Users/madelynschaut/Desktop/Botany563_FinalProject/software/species_files/OrthoFinder/Results_Apr30/WorkingDirectory/clusters_OrthoFinder_I1.5.txt_id_pairs.txt
+WorkingDirectory_Trees: /Users/madelynschaut/Desktop/Botany563_FinalProject/software/species_files/OrthoFinder/Results_Apr30/WorkingDirectory/
