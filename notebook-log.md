@@ -1,4 +1,4 @@
-# reproducible script for phylogenetic final project analysis
+# reproducible script for final project analysis
 
 cloned my madelynschaut/MS_Botany563 github repository to my local computer
 ```
@@ -8,7 +8,7 @@ cd MS_Botany563
 open README.md
 ```
 
-to update github to changes in my local repo
+to update github to changes in my local computer
 ```
 git add .
 git commit -m "updated readme"
