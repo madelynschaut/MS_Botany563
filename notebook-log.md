@@ -14,7 +14,6 @@ git add .
 git commit -m "updated readme"
 git push
 ```
-
 ## data for ADH enzymes in Caryophyllales
 
 copied one Arabidopsis thaliana ADH enzyme (AT1G15710.1) sequence from Beth Moore's data "ADH_grplantFeb19_OG0002122.fasta"
