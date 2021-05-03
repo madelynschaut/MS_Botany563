@@ -1,6 +1,6 @@
 # reproducible script for final project analysis
 
-cloned my madelynschaut/MS_Botany563 github repository to my local computer
+I cloned my madelynschaut/MS_Botany563 github repository to my local computer
 ```
 pwd
 git clone https://github.com/madelynschaut/MS_Botany563.git
@@ -8,17 +8,18 @@ cd MS_Botany563
 open README.md
 ```
 
-to update github to changes in my local computer
+I used the following code to update github to changes in my local computer throughout the entire analysis
 ```
 git add .
 git commit -m "updated readme"
 git push
 ```
+
 ## data for ADH enzymes in Caryophyllales
 
-copied one Arabidopsis thaliana ADH enzyme (AT1G15710.1) sequence from Beth Moore's data "ADH_grplantFeb19_OG0002122.fasta"
+I copied one Arabidopsis thaliana ADH (AtADH) enzyme AT1G15710.1 sequence from Beth Moore's data "ADH_grplantFeb19_OG0002122.fasta"
 
-BLASTp the AtADH AT1G15710.1 sequence to the order Caryophyllales (taxid:3524)
+I used BLASTp to search the AtADH AT1G15710.1 sequence to the order Caryophyllales (taxid:3524)
 ```
 >AT1G15710.1
 MLLHFSPAKPLISPPNLRRNSPTFLISPPRSLRIRAIDAAQIFDYETQLKSEYRKSSALKIAVLGFGNFGQFLSKTLIRH
@@ -27,15 +28,17 @@ KYLPKEFDILCTHPMFGPESGKHSWSGLPFVYDKVRIGDAASRQERCEKFLRIFENEGCKMVEMSCEKHDYYAAGSQFVT
 HTMGRVLEKYGVESSPINTKGYETLLDLVENTSSDSFELFYGLFMYNPNALEQLERLDMAFESVKKELFGRLHQQYRKQM
 FGGEVQSPKKTEQKLLNDGGVVPMNDISSSSSSSSSSS*
 ```
-downloaded the entire BLAST job file "8SF1N9EW016-Alignment.txt"
+I downloaded the entire BLAST job file "8SF1N9EW016-Alignment.txt"
 
-downloaded the complete sequence file for sequences producing significant alignments "AtADH_caryophyllales_completesequence.txt". this dataset consists of the following:
+I also downloaded the complete sequence file for sequences producing significant alignments "AtADH_caryophyllales_completesequence.txt". I added two Arabidopsis sequences and four sequences from another species: Amaranthus hypochondriacus from Beth's original data to make the final dataset.
+
+This dataset consists of the following:
 ```
 number of species = 20
 number of genes = 36
 ```
 
-then i made individual species .fasta files to run on OrthoFinder, files located in "species_files" folder in my software folder
+Then, I made individual species .fasta files to run on OrthoFinder, files located in "species_files" folder in my software folder
 ```
 1. Arabidopsis_thaliana
 2. Amaranthus_hypochondriacus
@@ -59,24 +62,24 @@ then i made individual species .fasta files to run on OrthoFinder, files located
 20. Telephium_imperati
 ```
 
-all raw data files are located in the 'Data' folder
+All raw data files are located in the 'Data' folder in my GitHub
 
 
 ## Bioconda
-downloaded bioconda and followed installation instructions from https://bioconda.github.io/user/install.html
-
+I downloaded bioconda and followed installation instructions from https://bioconda.github.io/user/install.html.
+The GitHub repo for bioconda can be found here: https://github.com/bioconda/bioconda-recipes.
 
 ## OrthoFinder
-downloaded orthofinder from https://davidemms.github.io/orthofinder_tutorials/downloading-and-running-orthofinder.html
+I downloaded orthofinder v2.5.2 from https://davidemms.github.io/orthofinder_tutorials/downloading-and-running-orthofinder.html. The GitHub repo for orthofinder can be found here: https://github.com/davidemms/OrthoFinder.
 
 ### ran orthofinder through the terminal
 
-used bioconda to install orthofinder:
+I used bioconda to install orthofinder:
 ```
 conda install -c bioconda orthofinder
 ```
 
-the following was returned:
+The following was returned:
 ```
 Collecting package metadata (current_repodata.json): done
 Solving environment: done
@@ -93,12 +96,12 @@ Verifying transaction: done
 Executing transaction: done
 ```
 
-then, to confirm if orthofider was correctly installed, i ran:
+Then, to confirm if orthofider was correctly installed, I ran:
 ```
 orthofinder -h
 ```
 
-the following was returned:
+The following was returned:
 ```
 OrthoFinder version 2.5.2 Copyright (C) 2014 David Emms
 
@@ -159,17 +162,17 @@ CITATION:
  Emms D.M. & Kelly S. (2018), bioRxiv https://doi.org/10.1101/267914
 ```
 
-it appears that orthofinder was successfully installed
+So, it appears that orthofinder was successfully installed
 
-used a script provided with OrthoFinder to extract just the longest transcript variant per gene and run OrthoFinder on these files.
-python script is not installed during conda installation-- need to get the python scripts from the github repo:
+I used a script provided with OrthoFinder to extract just the longest transcript variant per gene and run OrthoFinder on these files.
+Python script is not installed during conda installation-- So, I needed to get the python scripts from the github repo:
 ```
 cd ..
 cd software
 git clone https://github.com/davidemms/OrthoFinder.git
 ```
 
-the following was returned:
+The following was returned:
 ```
 Cloning into 'OrthoFinder'...
 remote: Enumerating objects: 8702, done.
@@ -181,12 +184,12 @@ Resolving deltas: 100% (4351/4351), done.
 Updating files: 100% (4140/4140), done.
 ```
 
-ran orthofinder
+I ran orthofinder on my individual species files
 ```
 orthofinder -f species_files/
 ```
 
-the following was returned:
+The following was returned:
 ```
 OrthoFinder version 2.5.2 Copyright (C) 2014 David Emms
 
@@ -490,34 +493,34 @@ Traceback (most recent call last):
 scripts_of.newick.NewickError: Unexisting tree file or Malformed newick tree structure.
 ```
 
-a new file was created titled "OrthoFinder" with all of the summary statistics and orthogroup sequences
+A new file was created titled "OrthoFinder" with all of the summary statistics and orthogroup sequences
 
-two orthogroups were generated: OG0000000.fa which contains 32 genes and OG0000001.fa which contains 4 genes (both genes from the species Chenopodium quinoa (XP_021760702.1 and XP_021741823.1); both genes from the species Macarthuria australis (AYE54619.1 and AYE54615.1))
+From this analysis, two orthogroups were generated: OG0000000.fa which contains 32 genes and OG0000001.fa which contains 4 genes (both genes from the species Chenopodium quinoa (XP_021760702.1 and XP_021741823.1); both genes from the species Macarthuria australis (AYE54619.1 and AYE54615.1))
 
-used only the OG0000000.fa orthogroup moving forward
+I used only the OG0000000.fa orthogroup moving forward
 
 
 ## ClustalW
-downloaded ClustalW file clustalw-2.1-macosx from http://www.clustal.org/clustal2/ and copied to Desktop/software
+I downloaded ClustalW file clustalw-2.1-macosx from http://www.clustal.org/clustal2/ and copied to Desktop/software
 
 ### ran clustalW2 through the terminal
-
+I attempted to run ClustalW v2.1.1 using the code:
 ```
 clustalw-2.1-macosx/clustalw2 -ALIGN -INFILE=ADH_OG0000000.fa -OUTFILE=ADH_OG0000000-aligned.fasta -OUTPUT=FASTA
 ```
 
-the following was returned:
+But, the following was returned:
 ```
 zsh: bad CPU type in executable: clustalw-2.1-macosx/clustalw2
 ```
 
-based off of Beth's advice in the GitHub repo, i ran the following:
+So, based off of Beth's advice in the class GitHub repo, I ran the following:
 ```
 conda activate
 conda create -n clustalw2 -c biobuilds -y clustalw
 ```
 
-the following was returned:
+The following was returned:
 ```
 Collecting package metadata (current_repodata.json): done
 Solving environment: done
@@ -548,13 +551,13 @@ Executing transaction: done
 #     $ conda deactivate
 ```
 
-activated clustalw2 via conda and ran clustalw:
+Then, I activated clustalw2 via conda and ran clustalw:
 ```
 conda activate clustalw2
 clustalw2 -ALIGN -INFILE=ADH_OG0000000.fa -OUTFILE=ADH_OG0000000-aligned.fasta -OUTPUT=FASTA
 ```
 
-the following was returned:
+The following was returned:
 ```
  CLUSTAL 2.1 Multiple Sequence Alignments
 
@@ -1136,15 +1139,15 @@ Fasta-Alignment file created    [ADH_OG0000000-aligned.fasta]
 ```
 
 
-## RAxML-ng
-downloaded "64-bit OSX/macOS binary" from https://github.com/amkozlov/raxml-ng
+## RAxML-NG
+I downloaded RAxML-NG v1.0.2 "64-bit OSX/macOS binary" from https://github.com/amkozlov/raxml-ng/
 
-verified it installed correctly using:
+Then, I verified it installed correctly using:
 ```
 raxml-ng -v
 ```
 
-the following was returned:
+The following was returned:
 ```
 RAxML-NG v. 1.0.2 released on 22.02.2021 by The Exelixis Lab.
 Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
@@ -1155,16 +1158,16 @@ Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!
 System: Intel(R) Core(TM) i5-8257U CPU @ 1.40GHz, 4 cores, 8 GB RAM
 ```
 
-need to determine best model for my data set using ModelTest-NG...
+Before running RAxML-NG, I need to determine best model for my data set using ModelTest-NG...
 
 ## ModelTest-NG
 
-cloned the git repo to my computer
+I cloned the git repo to my computer in order to install ModelTest-NG v0.1.7
 ```
 git clone https://github.com/ddarriba/modeltest
 ```
 
-the following was returned:
+The following was returned:
 ```
 Cloning into 'modeltest'...
 remote: Enumerating objects: 3226, done.
@@ -1174,13 +1177,14 @@ remote: Total 3226 (delta 59), reused 96 (delta 40), pack-reused 3093
 Receiving objects: 100% (3226/3226), 2.74 MiB | 7.12 MiB/s, done.
 Resolving deltas: 100% (2588/2588), done.
 ```
+Then, I installed a few more dependencies in order to run modeltest-ng on my computer following the steps from the same GitHub repo cited above
 
-installed homebrew from https://brew.sh/
+First, I installed homebrew from https://brew.sh/
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-the following was returned:
+The following was returned:
 ```
 HEAD is now at eae355810 Merge pull request #11297 from Homebrew/dependabot/bundler/docs/rexml-3.2.5
 ==> Tapping homebrew/core
@@ -1192,12 +1196,12 @@ Receiving objects: 100% (950888/950888), 378.85 MiB | 1.12 MiB/s, done.
 Resolving deltas: 100% (646778/646778), done.
 ```
 
-verified it installed correctly using:
+I verified it installed correctly using:
 ```
 brew
 ```
 
-the following was returned:
+The following was returned:
 ```
 Example usage:
   brew search TEXT|/REGEX/
@@ -1224,12 +1228,12 @@ Further help:
   https://docs.brew.sh
 ```
 
-get dependencies by installing flex bison:
+Second, I installed flex bison
 ```
 brew install flex bison
 ```
 
-the following was returned:
+The following was returned:
 ```
 ==> Downloading https://ghcr.io/v2/homebrew/core/gettext/manifests/0.21
 ######################################################################## 100.0%
@@ -1305,20 +1309,20 @@ For compilers to find bison you may need to set:
   export LDFLAGS="-L/usr/local/opt/bison/lib"
 ```
 
-downloaded cmake from https://cmake.org/download/ for macOS 10.13 or later, i downloaded "cmake-3.20.2-macos-universal.tar.gz"
+Third, I downloaded cmake from https://cmake.org/download/ for macOS 10.13 or later, and, in order to build modeltest-ng, I used the PTHREADS version steps.
 
-made a new build folder and set working directory for modeltest to run to:
+I made a new build folder and set working directory for modeltest to run to:
 ```
 mkdir build
 cd build
 ```
 
-call cmake from where it was downloaded
+Then, I ran the following in order to call cmake from where it was downloaded:
 ```
 /Users/madelynschaut/desktop/Botany563_FinalProject/software/cmake-3.20.2-macos-universal/CMake.app/Contents/bin/cmake ..
 ```
 
-the following was returned:
+The following was returned:
 ```
 -- The C compiler identification is AppleClang 12.0.0.12000032
 -- The CXX compiler identification is AppleClang 12.0.0.12000032
@@ -1464,26 +1468,27 @@ CMake Deprecation Warning at libs/pll-modules/src/CMakeLists.txt:1 (cmake_minimu
 -- Build files have been written to: /Users/madelynschaut/desktop/Botany563_FinalProject/software/modeltest/build
 ```
 
-created "make"
+Then, I created "make"
 ```
 make
 ```
 
-the following was returned:
+The following was returned:
 ```
 ...
 [100%] Linking CXX executable ../../bin/modeltest-ng
 [100%] Built target modeltest_module
 ```
-this means that modeltest-ng is in the bin folder inside of modeltest folder and it is ready to perform the model test on my data
+This means that modeltest-ng is in the bin folder inside of modeltest folder and it is ready to perform the model test on my data
+
 
 ### ran ModelTest-NG
-moved ADH_OG0000000-aligned.fasta to the "build" folder and ran the model test
+I moved ADH_OG0000000-aligned.fasta to the "build" folder and ran the model test
 ```
 /Users/madelynschaut/Desktop/Botany563_FinalProject/software/modeltest/bin/modeltest-ng -i ADH_OG0000000-aligned.fasta -t ml -d aa -p 2
 ```
 
-the following was returned:
+The following was returned:
 ```
 
                              _      _ _            _      _   _  _____ 
@@ -1848,16 +1853,17 @@ Assertion failed: (tip_id != -1), function build_tips_recurse, file /Users/madel
 zsh: abort       -i ADH_OG0000000-aligned.fasta -t ml -d aa -p 2
 ```
 
-according to the model test, the best fit for my data is the JTT+G4+F model
+According to the model test, the best fit for my data is the JTT+G4+F model
 
 ### ran RAxML-ng through the terminal
-followed the steps from https://biohpc.cornell.edu/doc/alignment_exercise3.html for most of this analysis
-ran my aligned data "ADH_OG0000000-aligned.fasta" from clustalw through RAxML-ng using the JTT+G4+F model
+I followed the steps from https://biohpc.cornell.edu/doc/alignment_exercise3.html for most of this analysis
+
+I ran my aligned data "ADH_OG0000000-aligned.fasta" from clustalw through RAxML-ng using the JTT+G4+F model. To verify in this file could be read by RAxML-NG, I ran the following check:
 ```
 ./raxml-ng --check --msa ADH_OG0000000-aligned.fasta --model JTT+G4+F
 ```
 
-the following was returned:
+The following was returned:
 ```
 RAxML-NG was called at 30-Apr-2021 21:14:11 as follows:
 
@@ -1891,13 +1897,18 @@ Analysis started: 30-Apr-2021 21:14:11 / finished: 30-Apr-2021 21:14:11
 
 Elapsed time: 0.012 seconds
 ```
+This means my file can be successfully read by RAxML-NG
+
+***
 
 ### inferred ML trees
+
+
 ```
 ./raxml-ng --threads 2 --msa ADH_OG0000000-aligned.fasta --model JTT+G4+F --prefix JTT
 ```
 
-the following was returned:
+The following was returned:
 ```
 Final LogLikelihood: -10964.422203
 
@@ -2016,24 +2027,7 @@ Elapsed time: 0.079 seconds
 
 
 ## FigTree
-downloaded figtree from https://github.com/rambaut/figtree/releases
+I downloaded FigTree v1.4.4 from https://github.com/rambaut/figtree/releases. The GitHub repo for FigTree can be found here: https://github.com/rambaut/figtree.
 
-used figtree application to visualize the trees generated
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+I used figtree application to visualize the best ML tree generated from RAxML-NG
 
