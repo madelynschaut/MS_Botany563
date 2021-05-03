@@ -1930,14 +1930,14 @@ Elapsed time: 172.561 seconds
 ```
 
 ### bootstrapping and branch support
-the previous execution generated 20 ML trees by raxml-ng default settings. bootstrap support values will be generated for those trees
+The previous execution generated 20 ML trees by raxml-ng default settings-- bootstrap support values will be generated for those trees
 
-ran bootstrap on my aligned data ADH_OG0000000-aligned.fasta
+I first ran bootstrap on my aligned data ADH_OG0000000-aligned.fasta
 ```
 ./raxml-ng  --bootstrap --threads 2 --msa ADH_OG0000000-aligned.fasta --model JTT+G4+F --prefix JTT_2
 ```
 
-the following was returned:
+The following was returned:
 ```
 RAxML-NG was called at 30-Apr-2021 21:56:07 as follows:
 
@@ -1992,12 +1992,12 @@ Analysis started: 30-Apr-2021 21:56:07 / finished: 01-May-2021 09:44:51
 Elapsed time: 42524.126 seconds
 ```
 
-ran bootstrap to map values on the best ML tree
+Then, I ran bootstrap to map values on the best ML tree
 ```
 ./raxml-ng --support --tree JTT.raxml.bestTree --bs-trees JTT_2.raxml.bootstraps --prefix JTT_3
 ```
 
-the following was returned:
+The following was returned:
 ```
 RAxML-NG was called at 01-May-2021 09:51:28 as follows:
 
